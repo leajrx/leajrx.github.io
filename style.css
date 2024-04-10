@@ -13,25 +13,30 @@ text-align: center;
 .button.primary{
     align-items: center;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     background: rgb(231, 127, 127);
     color: black;
     border: 2px solid rgb(231, 127, 127);
-    
+    padding: 5px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    font-weight: 600;
 }
 
-button{
-    padding: 8px 16px;
+.button.primary:hover{
+    color: white;
+
 }
 
 .logo{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    text-align: left;
+    text-align: center;
     width: 200px;
     height: 200px;
     font-size: 22px;
+    justify-content:center;
 }
 
 #avatar{
@@ -91,26 +96,102 @@ nav a:hover{
 
 }
 
-h1{
-    text-transform: uppercase;
-    text-align: center;
-    background-color: rgb(231, 127, 127);
-}
-
-
 .en-tete{
     display: flex;
     justify-content: right;
     text-align: center; 
 }
 
-p{ 
-    margin-top: 60px;
+p{  margin-top: 60px;
     margin-bottom: 20px;
     padding: 50px;
     white-space: pre-line;
 }
 
+.titre-long {
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(231, 127, 127);
+    color: black;
+}
+
+
 #Entreprise{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+}
+
+.Description{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 25px;
+    white-space: pre-line;
+}
+#Equipe{
+    display: flex;
+    justify-content: right;  
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 45px;
+    padding: 50px;
+}  
+
+.titre-long-2{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(231, 127, 127);
+    color: black;
+}
+z
+.titre-long-3{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+    background-color: rgb(231, 127, 127);
+    color: black;
+}
+
+#Valeurs{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
     
 }
+
+#Valeurs div {
+    width: 33%;
+    padding: 20px;
+}
+
+#Valeurs p{
+    margin-top: 0px;
+}
+
+#travels{
+    display: flex;
+    flex-direction: columnss;
+    gap: 16px;
+}
+
+.Bresil{
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 23px 20px 20px -3px black;
+}
+
+.descriptif-bresil{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
