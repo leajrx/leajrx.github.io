@@ -33,8 +33,7 @@ text-align: center;
     flex-direction: row;
     gap: 20px;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    height: 125px;
     font-size: 22px;
     justify-content:center;
 }
@@ -102,13 +101,19 @@ nav a:hover{
     text-align: center; 
 }
 
+#image{
+   align-items: center;
+   gap: 8px;
+  
+}
+
 p{  margin-top: 60px;
     margin-bottom: 20px;
     padding: 50px;
     white-space: pre-line;
 }
 
-.titre-long {
+.titre-long{
     margin-top: 50px;
     text-align: center;
     background-color: rgb(231, 127, 127);
@@ -146,7 +151,6 @@ p{  margin-top: 60px;
 z
 .titre-long-3{
     margin-top: 20px;
-    margin-bottom: 35px;
     text-align: center;
     background-color: rgb(231, 127, 127);
     color: black;
@@ -171,27 +175,133 @@ z
 
 #travels{
     display: flex;
-    flex-direction: columnss;
+    flex-direction:row;
     gap: 16px;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;/* Centrage vertical */
 }
 
-.Bresil{
+
+.Pays{
     width: 300px;
     height: auto;
     border-radius: 16px;
     background-color: white;
     display: flex;
-    margin: 10px;
-    flex-wrap: wrap;
+    margin top:20px;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 23px 20px 20px -3px black;
+    box-shadow: 12px 20px 20px -3px black;
+    gap: 16px;
 }
 
-.descriptif-bresil{
-    display: flex;
+#bresil{
+    gap: 8px;
     align-items: center;
-    text-transform: uppercase;
-    justify-content: space-between;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 9px;
+
 }
 
+#costa{
+    gap: 8px;
+    align-items: center;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 9px;
+}
+
+#colombie{
+    gap: 8px;
+    align-items: center;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 9px;
+}
+
+#mexique{
+    gap: 8px;
+    align-items: center;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 9px;
+}
+#cuba{
+    gap: 8px;
+    align-items: center;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 9px;
+}
+
+
+.title-pays{
+   padding: 20px;
+   align-items: center;
+   text-transform: uppercase;
+   justify-content: space-between;
+}
+
+.button{
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    transition: all .3s ease-in-out;
+    background-color:rgb(231, 127, 127);
+    color:black;
+    border: 2px solid rgb(231, 127, 127);
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;/* Centrage vertical */
+}
+
+.button:hover{
+    color: white;}
+
+h2{
+    margin-top: -15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3{
+    font-size: 15px; /* Changer la taille du texte en pixels */;
+}
+
+.button-secondary{
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;/* Centrage vertical */
+    margin: 15px
+    gap: 30px;
+    background: rgb(231, 127, 127);
+    color: black;
+    border: 2px solid rgb(231, 127, 127);
+    padding: 5px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    font-weight: 600;
+    width: 35px;
+}
+
+.button.secondary:hover{
+    color: white;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating{
+    display: inline-block;
+    font-size: 22px; /* Taille des étoiles */
+    color: gold; /* Couleur des étoiles */
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0 0 5px black;
+}
