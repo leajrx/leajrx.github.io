@@ -1,29 +1,34 @@
 
-html, body{
-    font-family: 'poppins'; sans-serif;
+html,
+
+body{
+    font-family: 'poppins', sans-serif;
     margin: 0;
 }
 
 header{
-background-color:white;
-text-align: center;
+
+    background-color:white;
+    text-align: center;
 }
 
-
-.button.primary{
-    align-items: center;
-    display: flex;
-    gap: 30px;
-    background: rgb(231, 127, 127);
-    color: black;
-    border: 2px solid rgb(231, 127, 127);
-    padding: 5px;
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
-    font-weight: 600;
+.button-primary{
+        align-items: center;
+        display: flex;
+        color: black;
+        font-weight: 600;
+        gap: 30px;
+        background: rgb(231, 127, 127);
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(231, 127, 127);
+        border-image: initial;
+        padding: 5px;
+        transition: color 0.5s ease 0s;
+        border-radius: 5px;
 }
 
-.button.primary:hover{
+.button-primary:hover{
     color: white;
 
 }
@@ -32,10 +37,10 @@ text-align: center;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    text-align: center;
-    height: 125px;
+    text-align: left;
+    width: 200px;
+    height: 200px;
     font-size: 22px;
-    justify-content:center;
 }
 
 #avatar{
@@ -69,7 +74,6 @@ nav{
     box-shadow: 10px 44px 100px -22px grey;
 }
 
-
 ul{
     display: flex;
     list-style-type: none;
@@ -92,7 +96,7 @@ a{
 
 nav a:hover{
     color: rgb(231, 127, 127);
-
+    text-align: center; 
 }
 
 .en-tete{
@@ -101,25 +105,11 @@ nav a:hover{
     text-align: center; 
 }
 
-#image{
-   align-items: center;
-   gap: 8px;
-  
-}
-
 p{  margin-top: 60px;
     margin-bottom: 20px;
     padding: 50px;
     white-space: pre-line;
 }
-
-.titre-long{
-    margin-top: 50px;
-    text-align: center;
-    background-color: rgb(231, 127, 127);
-    color: black;
-}
-
 
 #Entreprise{
     display: flex;
@@ -133,6 +123,7 @@ p{  margin-top: 60px;
     padding: 25px;
     white-space: pre-line;
 }
+
 #Equipe{
     display: flex;
     justify-content: right;  
@@ -142,29 +133,14 @@ p{  margin-top: 60px;
     padding: 50px;
 }  
 
-.titre-long-2{
-    margin-top: 20px;
-    text-align: center;
-    background-color: rgb(231, 127, 127);
-    color: black;
-}
-z
-.titre-long-3{
-    margin-top: 20px;
-    text-align: center;
-    background-color: rgb(231, 127, 127);
-    color: black;
-}
-
 #Valeurs{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    text-align: center;
-    
+    text-align: center;  
 }
 
-#Valeurs div {
+#Valeurs div{
     width: 33%;
     padding: 20px;
 }
@@ -173,8 +149,37 @@ z
     margin-top: 0px;
 }
 
+#image{
+   align-items: center;
+   gap: 8px;
+}
+
+
+.titre-long{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(231, 127, 127); 
+    color: black;
+}
+
+.titre-long-2{
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(231, 127, 127);
+    color: black;
+}
+
+.titre-long-3{
+    margin-top: -70px;
+    margin-bottom: 35px;
+    text-align: center;
+    background-color: rgb(231, 127, 127);
+    color: black;
+}
+
 #travels{
     display: flex;
+    flex-direction: columnss;
     flex-direction:row;
     gap: 16px;
     display: flex;
@@ -182,18 +187,21 @@ z
     align-items: center;/* Centrage vertical */
 }
 
-
 .Pays{
     width: 300px;
     height: auto;
     border-radius: 16px;
     background-color: white;
     display: flex;
-    margin top:20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    margin-top:20px;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 23px 20px 20px -3px black;
     box-shadow: 12px 20px 20px -3px black;
     gap: 16px;
+    
 }
 
 #bresil{
@@ -201,8 +209,8 @@ z
     align-items: center;
     object-fit: cover;
     height: 250px;
+    width: 100%;
     border-radius: 9px;
-
 }
 
 #costa{
@@ -210,14 +218,18 @@ z
     align-items: center;
     object-fit: cover;
     height: 250px;
+    width: 100%;
     border-radius: 9px;
 }
 
 #colombie{
     gap: 8px;
     align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
     object-fit: cover;
     height: 250px;
+    width: 100%;
     border-radius: 9px;
 }
 
@@ -226,22 +238,26 @@ z
     align-items: center;
     object-fit: cover;
     height: 250px;
+    width: 100%;
     border-radius: 9px;
 }
+
 #cuba{
     gap: 8px;
     align-items: center;
     object-fit: cover;
     height: 250px;
+    width: 100%;
     border-radius: 9px;
 }
 
-
 .title-pays{
    padding: 20px;
+   height: 80px;
    align-items: center;
    text-transform: uppercase;
    justify-content: space-between;
+   display: flex;
 }
 
 .button{
@@ -252,46 +268,60 @@ z
     background-color:rgb(231, 127, 127);
     color:black;
     border: 2px solid rgb(231, 127, 127);
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
     display: flex;
-    justify-content: center; /* Centrage horizontal */
-    align-items: center;/* Centrage vertical */
+    align-items: center;
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 50px;
+    height: 9px;
 }
 
 .button:hover{
-    color: white;}
+    color: white;
+}
 
 h2{
+    display: flex;
     margin-top: -15px;
-    margin-bottom: 30px;
     text-align: center;
+    flex-direction: row;
+    margin-top: -50px;
 }
 
 h3{
     font-size: 15px; /* Changer la taille du texte en pixels */;
+    margin-top: -20px;
+    margin-bottom: 15px;
 }
 
 .button-secondary{
-    display: flex;
     justify-content: center; /* Centrage horizontal */
-    align-items: center;/* Centrage vertical */
-    margin: 15px
-    gap: 30px;
-    background: rgb(231, 127, 127);
-    color: black;
-    border: 2px solid rgb(231, 127, 127);
+    text-align: center;
+    background: black;
+    color:white;
+    border: 2px solid black;
     padding: 5px;
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
-    font-weight: 600;
-    width: 35px;
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+    width: 205px;
+    align-items: center;
 }
 
-.button.secondary:hover{
-    color: white;
+.button-secondary:hover{
+    color:rgb(231, 127, 127);
 }
 
+.plus{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.com{
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
 .rating {
     unicode-bidi: bidi-override;
     direction: rtl;
@@ -304,4 +334,54 @@ h3{
     text-align: center;
     justify-content: center;
     text-shadow: 0 0 5px black;
+    margin-left: 45px;
 }
+
+.Prenom{
+    margin-left: 50px;
+    margin-bottom: -20px;
+    font-size: 19px;
+}
+
+footer {
+    background: rgb(231, 127, 127);
+    color: white;
+    align-items: flex-end;
+    display: block;
+    unicode-bidi: isolate;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    gap: 90px;
+    height: 70px;
+}
+
+
+.email{
+    color: black;
+    display: flex;
+    align-items: center; 
+    padding: 0.1px
+}
+
+.telephone{
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0.1px
+}
+
+.fa-brands.fa-instagram{
+    margin-bottom: 23px;
+}
+
+.fa-brands.fa-linkedin{
+    margin-bottom: 23px;
+}
+
+.fa-brands.fa-facebook{
+    margin-bottom: 23px;
+}
+
+
+
